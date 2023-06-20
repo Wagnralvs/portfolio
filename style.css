@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration:none ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+boby{
+    width: 100%;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8rem;
+}
+.header h1{
+    color: red;
+    font-size: 1.2rem;
+}
+.header h1 span{
+    color: white;
+}
+.navigation{
+ gap: 10px;
+ display: flex;
+ align-items: center;
+}
+.navigation li a{
+ width: 0px;
+ color: white;
+ padding: 10px;
+ font-size: 1.4rem;
+}
+
+.navigation li a:hover::after{
+    width: 100%;
+    height: 0px;
+    border-bottom: 4px solid #dc3545;
+    padding: 10px;
+}
+
+.navigation li a::after{
+    width: 100%;
+    height: 0px;
+    border-bottom: 4px solid #dc3545;
+    padding: 10px;
+}
+/* s
+/* seção */
+.section{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap:3.5rem;
+ padding: 3.5rem;
+ background-color: black;
+ animation: inicializar .7s forwards;
+}
+.section div{
+ margin-top: 120px;
+ align-self: start;
+ display: grid;
+ gap: 30px;
+}
+.title-h3{
+ font-weight: 600;
+ color: rgb(182, 182, 182);
+ font-family: 'Poppins';
+}
+.title-h2{
+ color: white;
+ font-family: 'Poppins';
+ font-weight: 600;
+}
+.description{
+ font-family: 'Poppins';
+ font-weight: 200;
+ color: #f7f7f7;
+}
+
+.dowload{
+    align-items: center;
+    padding: 15px 40px;
+    justify-self: start ;
+    color: white;
+    border-radius:5px ;
+    border: 2px solid white;
+}
+.image{
+    max-width: 100%;
+}
