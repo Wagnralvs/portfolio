@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <h1>Dev <span>Wagner</span></h1>
         <nav >
             <ul class="navigation">
-                <li><a>Inicio</a></li>
-                <li><a>Sobre mim</a></li>
-                <li><a>Projetos</a></li>
-                <li><a>Contatos</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about_Me">Sobre mim</a></li>
+                <li><a href="#websites">Projetos</a></li>
+                <li><a href="#contacts">Contatos</a></li>
             </ul>
             <div class="icon">
                 <i class="fa-solid fa-bars"></i>
@@ -26,25 +27,17 @@
     </header>
     <section class="section">
         <div class="description">
-          <h3 class="title-h3">hi there I'm </h3>
+          <h3 class="title-h3">olá, tudo bem? </h3>
           <h2 class="title-h2">Desenvolvedor front-end</h2>
-          <p >
-            E aí, tudo bem? 😁
-            <br>
-            Primeiro vou contar um pouco soubre mim, me chamo Wagner tenho 24 anos.
-            Sou formado em Processos gerenciais e  Administração, 
-            porém minha paixão mesmo é no código,  hoje desenvolvo em HTML, CSS,
+            Sou apaixonado por programação e tecnologia, 
+            sempre em processo de estudos de novas linguagem da programação, hoje desenvolvo em HTML, CSS,
             Typescript, Javascript e Angular 2+, 
             conhecimento e experiência em 
             CRUD, API rest,  testes unitários, Jest, karma e service 
             e atuação com frameworks  de estilização como bootstrap, voxel e angular material.
-            <br>
-            E aí vamos conversar? 😉
           </p>
+        <a  href="cv/CV-Wagner_2023.pdf" download class="download" >Dowload CV</a>
         
-        <a class="dowload" >Dowload CV</a>
-        
-          
        </div>
      <div class="image" >
         <img src="image/perfil.jpg" alt=" foto de perfil de wagner">
@@ -53,7 +46,7 @@
 
  <!-- about me -->
 <main>
-    <article aria-label="seção sobre mim" class="about">
+    <article aria-label="seção sobre mim" class="about" id="about_Me">
         <div class="about_title">
             <h1>Sobre mim</h1>
             <p>Proficional perfil  - Aqui está mais sobre mim </p>
@@ -67,61 +60,72 @@
         <div class="about_content">
             <div class="description">
                 <h1>Olá sou desenvolvedor - Wagner</h1>
-                <p>E aí, tudo bem? 😁
+                <p><p>E aí, tudo bem? 😁</p>
                     Primeiro vou contar um pouco sobre mim, tenho 24 anos,
-                    sou do nordeste, mas atualmente  moro em São Paulo Capital, 
+                    resido em São Paulo Capital, 
                     sou apaixonado por tecnologia, sempre gostei da 
-                    parte de códigos e de desenvolvimento 💻, heróis 🦸‍♂️, 
+                    parte de códigos e de desenvolvimento 💻, quadrinhos 🦸‍♂️, 
                     esportes 🏃‍♂️, música 🎵 e filmes 🎬.
-                    Sou formado em Processos gerenciais e  Administração, 
+                    <br>
+                    Sou formado em Processos gerenciais e Administração, 
                     porém minha paixão mesmo é no código,  
-                    hoje desenvolvo em HTML, CSS, Typescript, 
-                    Javascript e Angular 2+, conhecimento e atuação com bootstrap, 
-                    CRUD, API rest,  testes unitários, Jest, karma e service,  
-                    trabalho como desenvolvedor front-end Júnior na NTT DATA para o cliente Itaú.
+                    hoje desenvolvo com as principais tecnologias de front-end,  
+                    trabalho como desenvolvedor front-end na NTT DATA para o cliente Itaú.
+                    <br>
                     Sou LGBTIQIA+ 🏳️‍🌈, meu próposito de vida é criar oportunidades 
                     para as pessoas que necessitam. 
-                    
+                    <br>
                     E aí vamos conversar? 😉
                 </p>
-            </div>
-            <div class="about_info">
-                <p><i class="fa-solid fa-calendar-days"></i>Date of birth: 21 abr 1999</p>
-                <p><i class="fa-solid fa-location-dot"></i>Endereço: São Paulo, Brasil</p>
-                <p><i class="fa-sharp fa-solid fa-globe"></i>Spoken Langages: Brazil, Espanõl, English</p>
-                <p><i class="fa-solid fa-phone-volume"></i>Phone: +55 11 95160-3153</p>
-                <p><i class="fa-solid fa-envelope"></i>Email: wagneralvesviana99@gmail.com</p>
+                <div class="about_info" id="contacts">
+                    <p><i class="fa-solid fa-calendar-days"></i>Data de aniversario: 21 abr 1999</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Endereço: São Paulo, Brasil</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>Telefone: +55 11 95160-3153</p>
+                    <p><i class="fa-solid fa-envelope"></i>Email: wagneralvesviana99@gmail.com</p>
+                </div>
             </div>
         </div>
+      
     </article>
 </main>
 
-<section class="projects">
+<container class="web_project">
+ <section class="projects" id="websites">
     <div class="about_title">
         <h1>Projetos</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Projetos desenvolvidos</p>
         <div aria-label="Seção apenas de ilustrações de botões">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
-    <div class="project_models">
-        <ul class="project_navegacao" aria-label="Navegação entre modelos expecificos de projetos">
-            <!-- <li class="all">All</li>
-            <li class="website">Websites</li> -->
-        </ul>
-    </div>
     <div class="projects_github">
         <ul aria-label="Navegação de projetos e websites">
             <li id="design">
-                <div class="container"><img src="image/simulador.jpg" alt="Clone da tela de login do facebook"></div></li>
+                <div class="container"><a href="https://wagnralvs.github.io/simular-empr-stimo/"><img src="image/simulador.jpg" alt="simulador finaceiro"></a></div></li>
             <li id="graphic">
-                <div class="container"><img src="image/configurador.png" alt="Clone da tela de login do instagram"></div></li>
+                <div class="container"><a><img src="image/configurador.png" alt="Clone da tela de login do instagram"></a></div></li>
         </ul>
     </div>
+    <div class="more_project">
     <a href="#">Load More Portfólio</a>
-</section>
+   </div>
+ </section>
+</container>
+
+<footer>
+    <nav class="footer" aria-label="navegação de links sociais">
+        <ul class="footer_socials">
+            <li><a href="http://facebook.com/wagner.alvesviana.9" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/wagneraviana/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://instagram.com/wagnralvs/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/Wagnralvs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i></a></li>
+        </ul>
+    </nav>
+    
+    <p class="footer_rights">Desenvolvedor Wagner &copy; - 2023</p>
+</footer>
 </body>
 </html>
 

@@ -20,7 +20,17 @@ activecionMenu();
 function activecionMenu() {
  
   activeMenu.addEventListener("click", () => { 
-    activeMenu.classList.toggle("fa-x");
+   const btnClose = activeMenu.classList.toggle("fa-x");
+
     navMenu.classList.toggle("active");
+
+    if(!btnClose){
+    navMenu.classList.toggle("close");
+    }else{
+      
+    }
   });
 }
+
+
+

@@ -1,21 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
+:root{
+  --color-primary: black;
+  --color-secondary:rgb(40, 40, 40);
+  --color-tertiary: white;
+  --color-model:rgb(57, 57, 57);
+}
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
   font-family: "Poppins";
-  /* background-color: #111; */
 }
+ body{
+  background-color: var(--color-primary);
+  min-width: 280px;
+  max-width: 100%;
+ }
 
-boby {
-  width: 100%;
-}
 /* navegação */
 .header {
-  background-color: rgb(36, 36, 36);
+  background-color: var(--color-secondary);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -31,7 +38,7 @@ boby {
   align-items: top;
 }
 .header h1 span {
-  color: white;
+  color: var(--color-tertiary);
 }
 
 .navigation {
@@ -48,7 +55,7 @@ boby {
 
 .navigation li a {
   width: 0px;
-  color: white;
+  color: var(--color-tertiary);
   padding: 0.6rem;
   font-size: 1.4rem;
   font-family: "Poppins";
@@ -76,7 +83,7 @@ boby {
   grid-template-columns: 1fr 1fr;
   gap: 3.5rem;
   padding: 3.5rem;
-  background-color: black;
+  background-color: var(--color-primary);
   animation: efectTraslate 0.7s forwards;
 }
 .section div {
@@ -91,7 +98,7 @@ boby {
   font-family: "Poppins";
 }
 .title-h2 {
-  color: white;
+  color: var(--color-tertiary);
   font-family: "Poppins";
   font-weight: 600;
 }
@@ -100,14 +107,18 @@ boby {
   font-weight: 200;
   color: #f7f7f7;
 }
+.description h1{
+  margin-bottom: 1rem;
+}
 
-.dowload {
+.download {
   align-items: center;
   padding: 15px 40px;
   justify-self: start;
-  color: white;
+  color: var(--cor-tertiary);
   border-radius: 5px;
   border: 2px solid white;
+  cursor: pointer;
 }
 .image img {
   max-width: 100%;
@@ -148,16 +159,21 @@ boby {
 
 main {
   background-color: #111;
-  color: white;
+  color: var(--cor-tertiary);
+  display: flex;
+  justify-content: center;
 }
 
 main .about {
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 2rem;
   justify-content: center;
   padding: 40px;
+  background-color: var(--color-model);
+  width: 76%;
+  border-radius: 7px;
 }
 
 .about_title {
@@ -195,62 +211,20 @@ main .about {
   background-color: #dc3545;
 }
 
-.about img {
-  animation: sideSesion 0.5s ease-in-out forwards;
-  cursor: pointer;
-  grid-row: 2;
-  max-width: 100%;
-  border-radius: 4px;
-  filter: blur(0);
-}
-
-.about img:hover {
-  transition: 0.5s ease-in;
-  filter: blur(1px);
-}
-
 .about_content {
   animation: aboutSecionEffect 0.6s ease-in-out forwards;
   grid-column: 1/-1;
   display: grid;
   color: #707070;
-  /* grid-template-columns: 1fr 1fr; */
 }
-
-/* .about_texto {
-  display: grid;
-  grid-column: 1/-1;
-  grid-template-columns: 1fr 1fr;
-}
-
-.about_texto h1 {
-  font-size: 2.3rem;
-  color: #fff;
-  grid-column: 1/-1;
-}
-
-.about_texto h1::after {
-  background-color: #ff5d56;
-  height: 6px;
-  width: 60px;
-  margin: 20px 0;
-  content: "";
-  display: block;
-  border-radius: 5px;
-}
-
-.about_texto p {
-  font-size: 1.3rem;
-  grid-row: 2;
-  grid-column: 1/-1;
-} */
 
 .about_info {
-  margin-top: 30px;
+  margin-top: 4rem;
+  padding: 3rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column: 1/-1;
-  gap: 15px;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -270,7 +244,6 @@ main .about {
     transition: 0.5s;
     transform: translate3d(60px, 0, 0);
   }
-
   to {
     transform: translate3d(0, 0, 0);
   }
@@ -281,10 +254,120 @@ main .about {
     transition: 0.5s;
     transform: translate3d(-60px, 0, 0);
   }
-
   to {
     transform: translate3d(0, 0, 0);
   }
+}
+
+
+/* projetos */
+
+/* PROJECTS */
+.web_project{
+  margin-top: 3rem;
+  display: flex;
+  background-color: var(--color-primary);
+  justify-content: center;
+}
+
+.projects {
+  width: 78%;
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  background-color: var(--color-model);
+  margin-bottom: 5rem;
+  border-radius: 7px;
+}
+
+.projects ul {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+
+.projects_github ul {
+  display: grid;
+  margin-top: 60px;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects_github ul li {
+  max-width: 100%;
+  height: 100%;
+}
+
+.projects_github ul li.active {
+  display: block;
+  animation: animationButton 2s ease-in-out forwards;
+}
+
+.projects_github ul li a img {
+  cursor: pointer;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.projects .more_project{
+  display: flex;
+  justify-content: center;
+}
+
+.projects .more_project a{
+  background-color:var(--color-primary);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  justify-self: center;
+  border-radius: 3px;
+  color: var(--color-tertiary);
+  border: 1px solid #333;
+}
+
+@keyframes animationButton {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -90px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+/* rodape */
+footer{
+  padding: 1rem 0 0 0;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  
+  
+}
+.footer_socials{
+  color: var(--cor-tertiary);
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content:center;
+  gap: 3rem;
+  padding: 0.5rem 0;
+}
+
+.footer_socials li a i{
+  color: var(--color-tertiary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer_rights{
+  background-color: #151212;
+  text-align: center;
+  bottom: 0;
+  color: var(--color-tertiary);
 }
 
 /* responsividade */
@@ -302,15 +385,41 @@ main .about {
     border-radius: 4px;
     filter: blur(0);
   }
+  .download {
+    padding: 10px 30px;
+  }
+  .about_title span {
+    height: 12px;
+    width: 12px;
+  }
+  
+  .about_content {
+    grid-column:auto;
+    display: grid;
+  }
+  .about_title h1{
+    font-size: 1.7rem;
+  }
+  .about_title p{
+    font-size: 1.2rem;
+  }
   .about img {
     grid-column: 1/-1;
     justify-self: center;
   }
   .about_info {
-    grid-column: 1/-1;
-    align-items: center;
+    grid-template-columns: 1fr;
+    width: 100%;
     font-size: 0.7rem;
   }
+  .about_info i {
+    font-size: 1.1rem;
+  }
+  .about_info p {
+    font-size: 0.7rem;
+  }
+
+
   .header {
     justify-content: space-between;
   }
@@ -328,104 +437,34 @@ main .about {
   }
   .icon {
     display: flex;
-    color: #f7f7f7;
+    color: var(--color-tertiary);
     font-size: 2rem;
   }
   .navigation.active {
-    background: linear-gradient(
-      rgba(42, 41, 41, 0.176),
-      rgba(60, 55, 55, 0.724)
+    background-color: var(--color-tertiary);
+    background: linear-gradient(rgba(167, 167, 167, 0.5), rgb(107, 100, 100), rgb(57, 56, 56), black
     );
     position: absolute;
     display: grid;
-    top: 4rem;
-    color: white;
+    top: 3.5rem;
+    color: var(--cor-tertiary);
     z-index: 1;
     padding: 2.5rem;
     font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     font-weight: bold;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 8px 8px;
     right: 20px;
     animation: efectTraslate 0.8s ease-in-out forwards;
+    border: solid 2px #282828;
   }
-}
-/* projetos */
-
-/* PROJECTS */
-
-.projects {
-  padding: 30px;
-  display: grid;
-  gap: 30px;
-  justify-content: center;
-  background-color: #151515;
-}
-
-.projects ul {
-  justify-content: center;
-  display: flex;
-  gap: 30px;
-}
-
-.project_models ul li {
-  cursor: pointer;
-  font-family: "Poppins";
-  background-color: #222;
-  border: 1px solid #333;
-  color: #707070;
-  padding: 6px 20px;
-}
-
-.project_models ul li.active {
-  background-color: #dc3545;
-  color: #151515;
-  font-weight: bold;
-}
-
-.projects_github ul {
-  display: grid;
-  margin-top: 60px;
-  gap: 20px;
-  justify-content: center;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.projects_github ul li {
-  /* display: none; */
-  max-width: 100%;
-  height: 100%;
-}
-
-.projects_github ul li.active {
-  display: block;
-  animation: animationButton 2s ease-in-out forwards;
-}
-
-.projects_github ul li img {
-  cursor: pointer;
-  max-width: 100%;
-  height: 100%;
-  border-radius: 4px;
-}
-
-.projects a {
-  background-color: #222;
-  text-decoration: none;
-  padding: 20px 40px;
-  justify-self: center;
-  border-radius: 3px;
-  color: #707070;
-  border: 1px solid #333;
-}
-
-@keyframes animationButton {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -90px, 0);
+  .navigation.close{
+    animation: efectTraslate 0.8s ease-in-out forwards;
   }
 
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0px, 0);
+  .projects .more_project a{
+    padding: 0.5rem 1rem;
   }
+  
 }
