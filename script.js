@@ -32,5 +32,30 @@ function activecionMenu() {
   });
 }
 
+const input = document.querySelector("input");
+const body = document.querySelector(".body");
+
+OnOffMode()
+function OnOffMode (){
+  input.addEventListener('input', ()=>{ debugger
+    const onWhite = body.classList.toggle("modeWhite");
+    
+    if(onWhite){
+      document.documentElement.style.setProperty('--color-primary', 'white');
+      document.documentElement.style.setProperty('--color-tertiary', 'black');
+      document.documentElement.style.setProperty('--color-secondary','rgb(100, 114, 129)');
+      document.documentElement.style.setProperty('--color-model','rgb(57, 57, 57, 0.1)');
+      document.documentElement.style.setProperty('--color-model-project', 'rgba(86, 86, 86, 0.2)');
+    } else { debugger
+      document.documentElement.style.removeProperty('--color-primary');
+      document.documentElement.style.removeProperty('--color-tertiary');
+      document.documentElement.style.removeProperty('--color-secondary');
+      document.documentElement.style.removeProperty( '--color-model');
+      document.documentElement.style.removeProperty('--color-model-projectl')
+    }
+  })
+  
+  
+}
 
 
