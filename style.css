@@ -114,6 +114,88 @@
 .description h1{
   margin-bottom: 1rem;
 }
+.tec{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.tec li{
+  display: flex;
+  justify-content:space-between;
+}
+
+.tec li i {
+    display: flex;
+    align-items: center;
+    color: var(--color-tertiary);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: 0.6s;
+    cursor: pointer;
+    width: 100%;
+    position:relative;
+   
+  }
+  .tec li i img{
+    width: 2rem;
+    border-radius: 50%;
+  }
+  .tec li  i:hover {
+    background-color: rgb(134, 134, 134, 0.4);
+  }
+  /* descrição icon */
+
+  .tec li .fa-angular:hover::after{
+    content: 'Angular';
+  }
+  .tec li .fa-js:hover::after{
+    content: 'Javascrypt';
+  }
+
+  .tec li .fa-html5:hover::after{
+    content: 'HTML';
+  }
+  .tec li .fa-css3-alt:hover::after{
+    content: 'CSS';
+  }
+
+  .tec li .fa-sass:hover::after{
+    content: 'SCSS';
+  }
+
+  .tec li .fa-bootstrap:hover::after{
+    content: 'Bootstrap';
+  }
+
+  .tec li .fa-git:hover::after{
+    content: 'Git';
+  }
+
+  .tec li .fa-node-js:hover::after{
+    content: 'Node';
+  }
+
+  .tec li .jest:hover::after{
+    content: 'Jest';
+  }
+
+  .tec li .karma:hover::after{
+    content: 'Karma';
+  }
+
+  .tec li .fa-brands::after{
+    content: '';
+    display: block;
+    font-size: 9px;
+    position: absolute;
+    bottom: 0;
+    color: var(--color-tertiary);
+    font-family: "Poppins";
+  }
 
 .download {
   align-items: center;
@@ -144,7 +226,7 @@
 }
 .theme input:checked::before{
   font-family: "Poppins";
-  content: 'modo escuro';
+  content: 'modo claro';
 }
 .theme input::before{
   content: 'modo claro';
@@ -458,6 +540,20 @@ footer{
   .download {
     padding: 10px 30px;
   }
+  .tec {
+    display: grid;
+    grid-template-columns:auto auto auto auto auto; 
+    column-gap: 5px;
+    justify-content: space-evenly;
+  }
+   .tec li i {
+    font-size: 1.8rem;
+    padding: 0.6rem 0.2rem;
+  }
+
+  .tec li i img {
+    width: 1.8rem;
+  } 
   .about_title span {
     height: 12px;
     width: 12px;
@@ -502,7 +598,7 @@ footer{
 
   .description {
     font-size: 0.9rem;
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 1/-1;
   }
   .icon {
