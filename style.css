@@ -347,6 +347,9 @@ main .about {
   border-radius: 4px;
   justify-content: center;
 }
+.container p {
+  color: var(--color-tertiary);
+}
 .projects_github ul li .container .btn_project{
   display: flex;
   justify-content: space-between;
