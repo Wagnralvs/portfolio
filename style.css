@@ -417,10 +417,21 @@ main .about {
   animation: animationButton 2s ease-in-out forwards;
 }
 .projects_github ul li .container{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   gap: 2rem;
+  height: 90%;
+  justify-content:space-around;
+  align-items: center;
+
 }
+
+.projects_github ul li .container h3{
+
+  color: var(--color-tertiary);
+}
+
 
 .projects_github ul li .container img {
   cursor: pointer;
@@ -436,7 +447,8 @@ main .about {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-
+  width: 100%;
+  bottom: 0;
 }
 .projects_github ul li .container .btn_project a{
   align-items: center;
