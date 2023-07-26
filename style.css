@@ -111,6 +111,7 @@
   font-family: "Poppins";
   font-weight: 200;
   color: var(--color-tertiary);
+  height: 100%;
 }
 .description h1{
   margin-bottom: 1rem;
