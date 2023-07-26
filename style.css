@@ -94,6 +94,7 @@
   margin-top: 7rem;
   align-self: start;
   display: grid;
+  justify-items: center;
   gap: 30px;
 }
 .title-h3 {
@@ -118,6 +119,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content:space-around;
 }
 .tec li{
   display: flex;
@@ -211,7 +213,7 @@
   background-color: var(--color-secondary);
 }
 .image img {
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 50%;
   border: 8px solid rgb(3, 50, 90);
 }
@@ -219,6 +221,7 @@
 .theme{
   display: block;
   justify-content: end;
+  width:100%;
 }
 .theme input{
  width: 1.6rem;
@@ -531,7 +534,7 @@ footer{
   background-color: #151212;
   text-align: center;
   bottom: 0;
-  color: var(--color-tertiary);
+  color: white;
 }
 
 /* responsividade */
@@ -548,6 +551,9 @@ footer{
     cursor: pointer;
     border-radius: 4px;
     filter: blur(0);
+  }
+  .image img{
+    max-width:100%;
   }
   .download {
     padding: 10px 30px;
